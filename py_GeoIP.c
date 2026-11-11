@@ -28,7 +28,7 @@ staticforward PyTypeObject GeoIP_GeoIPType;
 static PyObject *PyGeoIPError;
 
 typedef struct {
-    PyObject_HEAD;
+    PyObject_HEAD /* Should not end with a semicolon. */
     GeoIP *gi;
 } GeoIP_GeoIPObject;
 
